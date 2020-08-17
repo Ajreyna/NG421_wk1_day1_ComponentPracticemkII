@@ -57,21 +57,29 @@ Let's use our data to dynamically make some html and components show up in our p
   * Populate the hard coded information with dynamic data from the `order` variable
   * We should now see multiple rows in the transaction panel.
 * TaskPanel (task-panel.component.ts)
+    I GOT TO THIS POINT. 
+
+
   * Import the tasks array into this component from `./src/app/tasks.ts`
   * In the `OnNgInit`method, assign this array to a class property called `tasks` 
   * In `task-panel.component.html` use `ngFor` on the `<app-task-item>` element
   * `<app-task-item *ngFor="let task of tasks"></app-task-item>`
   * We shoudl now see multiple rows in the task panel.
+
+completed 8/16/2020 1:22pm
+
 * TopNav (top-nav.component.ts)
   * Import the messages array into this component from `./src/app/messages.ts`
   * In the `OnNgInit`method, assign this array to a class property called `messages` 
   * In `top.nav.component.html` use `ngFor` on the `<app-message-preview>` element
   * `<app-message-preview *ngFor="let message of messages"></app-message-preview>`
   * We should now see multiple messages in the top nav menu item for messages
+completed 8/16/2020 1:24 pm
 
 ### Conditional Rendering
 Use NgIf in the TransactionPanel component. If the order amount is greater than $1000, make the `<tr>` red.
 
+completed 8/16/2020
 
 ### Input
 Use the Input decorator to allow our components to accept data through an attribute.
